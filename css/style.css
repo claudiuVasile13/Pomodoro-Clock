@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+/*   border: 1px solid red; */
+}
+
+#box {
+  padding: 0;
+  margin: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+/*   border: 1px solid red; */
+}
+
+#pomodoro-box {
+/*   border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
+#pomodoro-box > h2 {
+  font-family: 'Chewy';
+  color: #424242;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#fcc {
+   color: green;
+}
+
+/* The style for the div and its children which containts the 2 timers/counters for break and work */
+#time-box {
+/*   border: 1px solid blue; */
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#break {
+/*   border: 1px solid green; */
+  flex: 0 0 50%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+#work {
+/*   border: 1px solid orange; */
+  flex: 0 0 50%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.session-name {
+/*   width: 60px; */
+/*   height: 60px; */
+/*   border-radius: 2px; */
+  font-size: 30px;
+  color: #424242;
+  font-family: 'Josefin Sans';
+/*   border: 1px solid #424242; */
+}
+
+.subtract, .add {
+  font-size: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.subtract {
+  color: red;
+  margin-right: 10px;
+}
+
+.add {
+  color: green;
+  margin-left: 10px;
+}
+
+.time {
+  text-align: center;
+  font-size: 25px;
+  color: #424242;
+  font-family: 'Josefin Sans';
+}
+
+/* The style for the div that represents the pomodoro clock */
+
+#pomodoro {
+/*   border: 1px solid #2196f3; */
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+/*   width: 300px; */
+   height: 300px;
+  margin: 0 auto;
+  background: url('../img/pomodoro.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#clock-data {
+/*   border: 3px solid red; */
+  text-align: center;
+  width: 290px;
+  height: 240px;
+/*   border-radius: 50%; */
+  background-color: transparent;
+  padding: 0;
+}
+
+#current-session {
+  font-family: 'Chewy';
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-top: 35px;
+/*   margin-top: 10px; */
+/*    border: 1px solid red; */
+  padding: 0;
+  color: #fff;
+}
+
+#clock-time {
+  font-family: 'Chewy';
+  font-size: 50px;
+  margin: 0;
+  color: #fff;
+/*   margin-top: 10px; */
+/*    border: 1px solid red; */
+  padding: 0;
+}
+
+#clock-button {
+  margin-top: 15px;
+  border: none;
+  font-family: 'Bad Script';
+  color: #00d400;
+  font-size: 30px;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: transparent;
+/*   margin: 0; */
+/*   border: 1px solid red; */
+  cursor: pointer;
+}
+
+/* Progress Bar */
+#bar {
+  border: 5px solid #424242;
+  height: 25px;
+  width: 250px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#progress {
+  width: 0px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #00d400;
+}
+
+

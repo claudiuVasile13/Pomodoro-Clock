@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Josefin Sans">
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Chewy">
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Bad Script">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!-- The bootstrap row -->
+<div id="box">
+  
+  <!-- The bootstrap column -->
+  <div id="pomodoro-box">
+    
+    <!-- The titile of the app -->
+    <h2>Pomodoro Clock - <span id="fcc">FreeCodeCamp</span></h2>
+   
+    <!-- The div which contains the timers for the break and work sessions -->
+    <div id="time-box">
+      <!-- The timer for the break seassion -->
+      <div id="break">
+        <div class="subtract" id="minus-break">-</div>
+        <div class="break-info">
+          <div class="time" id="break-time">5</div>
+          <div class="session-name">BREAK</div>
+        </div>
+        <div class="add" id="plus-break">+</div>
+      </div>
+      <!-- The timer for the work session -->
+      <div id="work">
+        <div class="subtract" id="minus-work">-</div>
+        <div class="work-info">
+          <div class="time" id="work-time">25</div>
+          <div class="session-name">WORK</div>
+        </div>   
+        <div class="add" id="plus-work">+</div>
+      </div>
+    </div>
+    
+    <!-- The Pomodoro Clock -->
+    <div id="pomodoro">
+      <div id="clock-data">
+        <div id="current-session">WORK</div>
+        <div id="clock-time"></div>
+        <div id="clock-button">START</div>
+      </div>
+    </div>
+    
+    <!-- Progress Bar -->
+    <div id="bar">
+      <div id="progress">
+      </div>
+    </div>
+    
+  </div>
+</div>
+<audio id="alarm">
+  <source src="http://eventfinder.amussaeyewear.com/Zen.mp3" type="audio/mpeg">
+</audio>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
